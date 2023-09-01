@@ -1,0 +1,15 @@
+$phone: 393px;
+$tablet: 767px;
+$desctop: 1280px;
+
+.container {
+   max-width: 1280px;
+   margin: 0 auto;
+}
+
+@media (max-width: 1330px) {
+   .container {
+      max-width: 95vw;
+      margin: 0 auto;
+   }
+}

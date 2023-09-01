@@ -1,0 +1,93 @@
+@function rem($pixels, $base-font-size: 16px) {
+   @return calc(($pixels / $base-font-size) * 1rem);
+}
+
+.contacts {
+   @media (min-width: 991px) {
+      padding: 0 rem(20px);
+   }
+}
+
+.contacts-container {}
+
+.contacts-content {
+   display: flex;
+   gap: rem(57px);
+
+   @media (max-width: 991px) {
+      flex-wrap: wrap;
+      gap: 10vw;
+
+      iframe {
+         width: 100%;
+         height: 75vh;
+      }
+   }
+
+   @media (max-width: 393px) {
+      iframe {
+         width: 100%;
+         height: 50vh;
+      }
+   }
+}
+
+.contacts-info {
+   display: flex;
+   flex-direction: column;
+   gap: rem(40px);
+
+   @media (max-width: 991px) {
+      flex-direction: row;
+      gap: 2vw;
+      font-size: rem(17px);
+   }
+
+   @media (max-width: 555px) {
+      flex-direction: column;
+      gap: 5vw;
+   }
+}
+
+.info-data {
+   display: flex;
+   flex-direction: column;
+   gap: rem(24px);
+
+   @media (max-width: 992px) {
+      gap: 2vw;
+   }
+
+   &__mail {}
+
+   &__number {}
+
+   &__address {}
+}
+
+.info-schedule {
+   display: flex;
+   flex-direction: column;
+   gap: rem(10px);
+
+   &__title {
+      font-weight: 500;
+   }
+
+   &__text {}
+}
+
+.schedule__weekends {
+   display: flex;
+   flex-direction: column;
+   gap: rem(10px);
+
+   @media (max-width: 991px) {
+      flex-direction: row;
+      gap: 2vw;
+   }
+
+   @media (max-width: 555px) {
+      flex-direction: column;
+   }
+}

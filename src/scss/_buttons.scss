@@ -1,0 +1,50 @@
+@use './sizes.scss' as *;
+
+.button {
+   background: #fff;
+   padding: 24px 65px 24px 36px;
+   color: #000;
+   font-size: 20px;
+   font-weight: 600;
+   display: inline-block;
+   white-space: nowrap;
+   border-radius: 40px;
+
+   &::after {
+      content: "";
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      background: url('../src/Assets/Icons/Arrow\ Right.png');
+      z-index: 20;
+      position: absolute;
+      top: 50%;
+      right: 36px;
+      transform: translate(0, -45%);
+   }
+}
+
+.button1 {
+   background: #fff;
+   border: 1px solid #000;
+   padding: 14px 65px 14px 36px;
+   color: #000;
+   font-size: 20px;
+   font-weight: 600;
+   display: inline-block;
+   white-space: nowrap;
+   border-radius: 40px;
+
+   &::after {
+      content: "";
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      background: url('../src/Assets/Icons/Arrow\ Right.png');
+      z-index: 20;
+      position: absolute;
+      top: 50%;
+      right: 36px;
+      transform: translate(0, -45%);
+   }
+}
