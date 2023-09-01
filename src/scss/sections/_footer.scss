@@ -1,138 +1,138 @@
 @function rem($pixels, $base-font-size: 16px) {
-   @return calc(($pixels / $base-font-size) * 1rem);
+  @return calc(($pixels / $base-font-size) * 1rem);
 }
 
 .footer {
-   @media (min-width: 991px) {
-      padding: 0 rem(20px);
-   }
+  @media (min-width: 991px) {
+    padding: 0 rem(20px);
+  }
 
-   &__logo {
-      img {
-         width: 91px;
-         height: 72px;
+  &__logo {
+    img {
+      width: 91px;
+      height: 72px;
+    }
+  }
+
+  &__menu {
+  }
+
+  &__socials {
+    display: flex;
+    gap: rem(16px);
+
+    @media (max-width: 498px) {
+      gap: 1vw;
+    }
+
+    .social svg {
+      filter: drop-shadow(-4px 4px 4px rgba(64, 63, 73, 0.2));
+    }
+
+    .social svg:hover {
+      rect {
+        fill: #b4b2c2;
       }
-   }
+    }
 
-   &__menu {}
-
-   &__socials {
-      display: flex;
-      gap: rem(16px);
-
+    .social svg {
       @media (max-width: 498px) {
-         gap: 1vw;
+        width: 23px;
+        height: 23px;
       }
-
-      .social svg {
-         filter: drop-shadow(-4px 4px 4px rgba(64, 63, 73, 0.2));
-      }
-
-      .social svg:hover {
-         rect {
-            fill: #b4b2c2;
-         }
-      }
-
-      .social svg {
-         @media (max-width: 498px) {
-            width: 23px;
-            height: 23px;
-         }
-      }
-   }
+    }
+  }
 }
 
 .footer-container {
-   padding: rem(72px) 0 rem(36px) 0;
+  padding: rem(72px) 0 rem(36px) 0;
 
-   @media (max-width: 705px) {
-      padding: rem(40px) 0 rem(30px) 0;
-   }
+  @media (max-width: 705px) {
+    padding: rem(40px) 0 rem(30px) 0;
+  }
 
-   .page-line {
-      margin-top: 0;
-      background: #d4d2e3;
-   }
+  .page-line {
+    margin-top: 0;
+    background: #d4d2e3;
+  }
 }
 
 .footer-wrapper {
-   display: flex;
-   justify-content: space-between;
-   margin-bottom: rem(46px);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: rem(46px);
 
-   @media (max-width: 705px) {
-      margin-bottom: rem(11px);
-   }
+  @media (max-width: 705px) {
+    margin-bottom: rem(11px);
+  }
 }
 
 .footer-part {
-   display: flex;
-   gap: rem(160px);
+  display: flex;
+  gap: rem(160px);
 
-   @media (max-width: 1190px) {
-      gap: 7vw;
-   }
+  @media (max-width: 1190px) {
+    gap: 7vw;
+  }
 
-   @media (max-width: 991px) {
+  @media (max-width: 991px) {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2vw;
+  }
+
+  @media (max-width: 705px) {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: rem(20px);
+  }
+}
+
+.footer {
+  &__list {
+    display: flex;
+    gap: rem(32px);
+
+    @media (max-width: 705px) {
       flex-direction: column;
-      align-items: flex-end;
       gap: 2vw;
-   }
+    }
 
-   @media (max-width: 705px) {
-      flex-direction: row;
-      align-items: flex-start;
-      margin-left: rem(20px);
-   }
-}
+    @media (max-width: 351px) {
+      gap: 1vw;
+    }
+  }
 
-.menu {
-   &__list {
-      display: flex;
-      gap: rem(32px);
+  &__item {
+  }
 
-      @media (max-width: 705px) {
-         flex-direction: column;
-         gap: 2vw;
-      }
+  &__link {
+    font-weight: 500;
 
-      @media (max-width: 351px) {
-         gap: 1vw;
-      }
-   }
-}
+    @media (max-width: 498px) {
+      font-size: 16px;
+    }
 
-.list {
-   &__item {}
+    @media (max-width: 351px) {
+      font-size: 11.9px;
+    }
+  }
 
-   &__link {
-      font-weight: 500;
-
-      @media (max-width: 498px) {
-         font-size: 16px;
-      }
-
-      @media (max-width: 351px) {
-         font-size: 11.9px;
-      }
-   }
-
-   &__link:hover {
-      color: #7e501b;
-   }
+  &__link:hover {
+    color: #7e501b;
+  }
 }
 
 .footer-copyright {
-   text-align: center;
-   margin-top: rem(32px);
+  text-align: center;
+  margin-top: rem(32px);
 
-   @media (max-width: 991px) {
-      font-size: 16px;
-   }
+  @media (max-width: 991px) {
+    font-size: 16px;
+  }
 
-   @media (max-width: 705px) {
-      font-size: 12px;
-      margin-top: rem(24px);
-   }
+  @media (max-width: 705px) {
+    font-size: 12px;
+    margin-top: rem(24px);
+  }
 }
