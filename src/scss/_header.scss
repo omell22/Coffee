@@ -28,12 +28,17 @@
       gap: 2rem;
    }
 
-   &__item {}
+   &__item:hover {
+      & a {
+         color: #7E501B;
+         transition: 0.6s;
+      }
 
-   &__link {}
+   }
+
 
    &__search {
-      background: #99999c;
+      background: #F2F1FA;
       border-radius: 15px;
       padding: 5px 8px;
       margin-left: 3rem;
@@ -65,9 +70,7 @@
 @media (max-width: 1150px) {
 
    .menu {
-      &__link {
-         font-size: 1ю5vw;
-      }
+
 
       &__search {
          //position: absolute;
