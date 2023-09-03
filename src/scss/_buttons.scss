@@ -1,4 +1,23 @@
-@use './sizes.scss' as *;
+@use "./sizes.scss" as *;
+
+.arrow-up {
+   position: fixed;
+   bottom: 10%;
+   right: 10%;
+   z-index: 30;
+   padding: 14px;
+   border-radius: 50%;
+   background-color: #d2d1da;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: background-color 0.3s;
+
+   img {
+      width: 24px;
+      height: 24px;
+   }
+}
 
 .button {
    background: #fff;
@@ -15,18 +34,20 @@
       position: absolute;
       height: 20px;
       width: 20px;
-      background: url('../src/Assets/Icons/Arrow\ Right.png');
+      background: url("../src/Assets/Icons/Arrow\ Right.png");
       z-index: 20;
       position: absolute;
       top: 50%;
       right: 36px;
       transform: translate(0, -45%);
    }
+
+
 }
 
 .button1 {
    background: #fff;
-   border: 1px solid #000;
+   border: 1px solid #5E3200;
    padding: 14px 65px 14px 36px;
    color: #000;
    font-size: 20px;
@@ -40,11 +61,22 @@
       position: absolute;
       height: 20px;
       width: 20px;
-      background: url('../src/Assets/Icons/Arrow\ Right.png');
+      background: url("../src/Assets/Icons/Arrow\ Right.png");
       z-index: 20;
       position: absolute;
       top: 50%;
       right: 36px;
       transform: translate(0, -45%);
+   }
+
+   &:hover {
+      background: #966D3F;
+      color: #fff;
+      transition: 0.6s;
+
+      &::after {
+         filter: brightness(0) invert(1);
+         transition: 0.6s;
+      }
    }
 }
