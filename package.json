@@ -1,7 +1,7 @@
 {
 	"name": "name",
 	"version": "1.0.0",
-	"homepage": "",
+	"homepage": "https://omell22.github.io/Coffee/",
 	"dependencies": {
 		"gh-pages": "^6.0.0",
 		"scss": "^0.2.4"
