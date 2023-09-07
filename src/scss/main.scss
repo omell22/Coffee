@@ -12,7 +12,7 @@
 @use "./sections/cookies";
 @use "./sections/contacts";
 @use "./sections/team";
-@use "./sections/footer";
+@use "./footer";
 @use "./sections/subscribe";
 
 @function rem($pixels, $base-font-size: 16px) {
