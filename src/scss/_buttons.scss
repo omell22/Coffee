@@ -1,83 +1,97 @@
 @use "./sizes.scss" as *;
 
 .arrow-up {
-   position: fixed;
-   bottom: 10%;
-   right: 10%;
-   z-index: 30;
-   padding: 14px;
-   border-radius: 50%;
-   background-color: #d2d1da;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   transition: background-color 0.3s;
-   opacity: 0;
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+  z-index: 30;
+  padding: 14px;
+  border-radius: 50%;
+  background-color: #d2d1da;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+  opacity: 0;
 
-   img {
-      width: 24px;
-      height: 24px;
-   }
+  img {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .button {
-   background: #fff;
-   padding: 24px 65px 24px 36px;
-   color: #000;
-   font-size: 20px;
-   font-weight: 600;
-   display: inline-block;
-   white-space: nowrap;
-   border-radius: 40px;
+  background: #fff;
+  padding: 24px 65px 24px 36px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  display: inline-block;
+  white-space: nowrap;
+  border-radius: 40px;
 
-   &::after {
-      content: "";
-      position: absolute;
-      height: 20px;
-      width: 20px;
-      background: url("../src/Assets/Icons/Arrow\ Right.png");
-      z-index: 20;
-      position: absolute;
-      top: 50%;
-      right: 36px;
-      transform: translate(0, -45%);
-   }
-
-
+  &::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: url("../src/Assets/Icons/Arrow\ Right.png");
+    z-index: 20;
+    position: absolute;
+    top: 50%;
+    right: 36px;
+    transform: translate(0, -45%);
+  }
 }
 
 .button1 {
-   background: #fff;
-   border: 1px solid #5E3200;
-   padding: 14px 65px 14px 36px;
-   color: #000;
-   font-size: 20px;
-   font-weight: 600;
-   display: inline-block;
-   white-space: nowrap;
-   border-radius: 40px;
+  background: #fff;
+  border: 1px solid #5e3200;
+  padding: 14px 65px 14px 36px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  display: inline-block;
+  white-space: nowrap;
+  border-radius: 40px;
 
-   &::after {
-      content: "";
-      position: absolute;
-      height: 20px;
-      width: 20px;
-      background: url("../src/Assets/Icons/Arrow\ Right.png");
-      z-index: 20;
-      position: absolute;
-      top: 50%;
-      right: 36px;
-      transform: translate(0, -45%);
-   }
+  &::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: url("../src/Assets/Icons/Arrow\ Right.png");
+    z-index: 20;
+    position: absolute;
+    top: 50%;
+    right: 36px;
+    transform: translate(0, -45%);
+  }
 
-   &:hover {
-      background: #966D3F;
-      color: #fff;
+  &:hover {
+    background: #966d3f;
+    color: #fff;
+    transition: 0.6s;
+
+    &::after {
+      filter: brightness(0) invert(1);
       transition: 0.6s;
+    }
+  }
+}
 
-      &::after {
-         filter: brightness(0) invert(1);
-         transition: 0.6s;
-      }
-   }
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 40px;
+  padding: 12px 30px;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+}
+
+.btn:not([type="submit"]) {
+  font-size: 16px;
 }
