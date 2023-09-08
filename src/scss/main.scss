@@ -15,117 +15,101 @@
 @use "./sections/subscribe";
 
 @function rem($pixels, $base-font-size: 16px) {
-   @return calc(($pixels / $base-font-size) * 1rem);
+  @return calc(($pixels / $base-font-size) * 1rem);
 }
 
 html,
 body {
-   color: #23222b;
-   background-color: #fff;
-   font-family: "Montserrat", sans-serif;
-   font-size: rem(18px);
-   line-height: 150%;
-   font-weight: 400;
+  color: #23222b;
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: rem(18px);
+  line-height: 150%;
+  font-weight: 400;
 }
 
 .page-heading {
-   text-align: center;
-   padding-top: rem(120px);
-   padding-bottom: rem(60px);
-   font-size: rem(40px);
-   line-height: 150%;
-   font-weight: 600;
+  text-align: center;
+  padding-top: rem(120px);
+  padding-bottom: rem(60px);
+  font-size: rem(40px);
+  line-height: 150%;
+  font-weight: 600;
 }
 
 .page-line {
-   max-width: 1280px;
-   height: 2px;
-   background-color: #23222b;
-   margin-top: rem(120px);
+  max-width: 1280px;
+  height: 2px;
+  background-color: #23222b;
+  margin-top: rem(120px);
 }
 
 input,
 button {
-   color: inherit;
-   padding: rem(12px) rem(30px);
+  color: inherit;
+  padding: rem(12px) rem(30px);
 
-   @media (max-width: 492px) {
-      padding: rem(12px) rem(15px);
-      max-height: 2rem;
-   }
+  @media (max-width: 492px) {
+    padding: rem(12px) rem(15px);
+    max-height: 2rem;
+  }
 }
 
 button {
-   cursor: pointer;
+  cursor: pointer;
 }
 
 input[type="email"]:focus,
 input[type="email"]:hover {
-   background-color: darkgray;
-   outline: 1px solid #5e3200;
+  background-color: darkgray;
+  outline: 1px solid #5e3200;
 }
 
 input[type="email"]:focus::placeholder,
 input[type="email"]:hover::placeholder {
-   color: #23222b;
+  color: #23222b;
 }
 
 a,
 button,
 input[type="email"],
 rect {
-   transition: 0.2s ease-in background, 0.2s ease-in color, 0.2s ease-in outline,
-      0.2s ease-in fill;
+  transition: 0.2s ease-in background, 0.2s ease-in color, 0.2s ease-in outline,
+    0.2s ease-in fill;
 }
 
-// .btn {
-//    display: flex;
-//    justify-content: center;
-//    align-items: center;
-//    text-align: center;
-//    border-radius: 40px;
-//    padding: rem(12px) rem(30px);
-//    font-weight: 600;
-//    text-align: center;
-//    position: relative;
-// }
-
-// .btn:not([type="submit"]) {
-//    font-size: rem(16px);
-// }
-
 .page-line {
-   width: 100%;
-   height: 2px;
-   background-color: #23222b;
-   margin-top: rem(120px);
-   border-radius: 2px;
+  width: 100%;
+  height: 2px;
+  background-color: #23222b;
+  margin-top: rem(120px);
+  border-radius: 2px;
 
-   @media (max-width: 991px) {
-      padding-top: rem(80px);
-   }
+  @media (max-width: 991px) {
+    padding-top: rem(80px);
+  }
 
-   @media (max-width: 393px) {
-      padding-top: rem(60px);
-   }
+  @media (max-width: 393px) {
+    padding-top: rem(60px);
+  }
 }
 
 .page-heading {
-   text-align: center;
-   padding-top: rem(120px);
-   padding-bottom: rem(60px);
-   font-size: rem(40px);
-   line-height: 150%;
-   font-weight: 600;
+  text-align: center;
+  padding-top: rem(110px);
+  padding-bottom: rem(60px);
+  font-size: rem(40px);
+  line-height: 150%;
+  font-weight: 600;
 
-   @media (max-width: 991px) {
-      font-size: rem(32px);
-      padding-top: rem(80px);
-      padding-bottom: rem(48px);
-   }
+  @media (max-width: 991px) {
+    font-size: rem(32px);
+    padding-top: rem(80px);
+    padding-bottom: rem(48px);
+  }
 
-   @media (max-width: 393px) {
-      font-size: rem(24px);
-      padding-top: rem(60px);
-   }
+  @media (max-width: 393px) {
+    font-size: rem(24px);
+    padding-top: rem(60px);
+  }
 }
