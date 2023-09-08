@@ -60,9 +60,12 @@ button {
 }
 
 input[type="email"]:focus,
-input[type="email"]:hover {
+input[type="email"]:hover,
+input[type="search"]:focus,
+input[type="search"]:hover {
   background-color: darkgray;
   outline: 1px solid #5e3200;
+  transition: 0.6s;
 }
 
 input[type="email"]:focus::placeholder,
@@ -73,9 +76,9 @@ input[type="email"]:hover::placeholder {
 a,
 button,
 input[type="email"],
-rect {
-  transition: 0.2s ease-in background, 0.2s ease-in color, 0.2s ease-in outline,
-    0.2s ease-in fill;
+rect,
+input[type="search"] {
+  transition: 0.6s ease-in background, 0.6s ease-in color, 0.6s ease-in fill;
 }
 
 .page-line {
